@@ -25,7 +25,6 @@ button {
   border-radius: 5px;
   font-weight: 600;
 }
-
 .popup-modal {
   padding: 32px 64px;
   background-color: white;
@@ -52,12 +51,23 @@ button {
   background: #000;
   opacity: 0%;
 }
-
-.popup-modal.show {
-  opacity: 100%;
-  pointer-events: all;
-}
-
 .backdrop.show {
   opacity: 30%;
+}
+
+
+
+
+
+
+
+
+.popup-modal {
+  /* transition: transform 0.3s ease-in-out, opacity 0.4s ease; */
+  /* transform: translate(-50%, -100%); */
+}
+.popup-modal.show {
+  transform: translate(-50%,-50%);
+  opacity: 100%;
+  pointer-events: all;
 }
